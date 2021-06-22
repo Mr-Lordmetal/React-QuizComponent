@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import QuizEnd from './QuizEnd.js';
 
 class QuizEnd extends Component {
   render() {
