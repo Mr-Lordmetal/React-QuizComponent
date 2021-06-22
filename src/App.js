@@ -8,5 +8,4 @@ class App extends Component {
     return ( <Quiz /> );
   }
 }
-//ReactDOM.render(<App />, document.getElementById('root'));
 export default App;
