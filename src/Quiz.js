@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import QuizQuestion from './QuizQuestion.js';
 
-let quizData = require('./quiz_data.json')
+let QuizData = require('./quiz_data.json')
 
 class Quiz extends React.Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class Quiz extends React.Component {
 
   render() {
     return (
-      <QuizQuestion quiz_question = { quizData.quiz_questions[this.state.quiz_position -1] } />
+      <QuizQuestion quiz_question = { QuizData.quiz_questions[this.state.quiz_position -1]  } />
     );
   }
 }
