@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-let quizData = require('./quiz_data.json')
+
 
 class QuizQuestion extends Component {
   constructor(props) {
@@ -13,7 +13,7 @@ class QuizQuestion extends Component {
         <section>
           <p>
             <div className='QuizQuestion'>
-              { quizData.quiz_questions[0].instruction_text }
+              { this.props.quiz_question.instruction_text }
             </div>
           </p>
           </section>
