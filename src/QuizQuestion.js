@@ -7,6 +7,14 @@ class QuizQuestion extends Component {
   }
 
   render() {
+    const answers = this.props.quiz_question.answer_options;
+    const listItems = answers.map((answer) =>
+      <li>
+        { answer }
+        <QuizQuestionButton button_text = { answer } />
+      </li>
+    );
+
     return (
       <main>
         <section>
@@ -14,10 +22,7 @@ class QuizQuestion extends Component {
           </section>
         <section className="buttons">
           <ul>
-            <li>
-              { this.props.quiz_question.answer_options[0] }
-              <QuizQuestionButton button_text = { this.props.quiz_question.answer_options[0] } />
-            </li>
+            { listItems }
           </ul>
         </section>
       </main>
