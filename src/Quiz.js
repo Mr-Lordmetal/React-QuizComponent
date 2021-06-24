@@ -11,7 +11,7 @@ class Quiz extends React.Component {
   }
 
   showNextQuestion() {
-    this.props.setState.quiz_position += 1;
+    this.setState.quiz_position += 1;
   }
 
   render() {
